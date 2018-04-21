@@ -1,0 +1,38 @@
+
+
+
+node y express
+
+crear carpeta de proyecto
+ingresar a carpeta por consola
+correr npm init, esto inica el gestor de paquetes 
+correr nom install "nombre de libreia" --save, para intalar paquete
+crear archivo .gitignore, si es que hay cosas que no quiero agrerar al repositorio giT(carpeta o archivos)
+
+comentar archivos jade con <-- -->, manda error
+arrchivo desde donde invoco a jade no puede tener nombre index
+
+intalar mongodb
+se corre por consola dede el directorio mongo, mongod
+se intala moongose (modelador de objetos) en el proyecto npm install mongoose  --save
+
+comandos mongo por consola desde mongo.exe
+show dbs, muestra las db 
+use."nombre db", elige la db
+show conllections, muestra las colecciones (tablas)
+db."nombre_coleccion".find(), muetra los documentos de esa coleccion (registros)
+db."nombre_db".drop(), elimina la coleccion
+
+validaciones se hacen en el schema
+error se recibe en zona asincrona user.save
+los parmetros deben se tipo jason
+
+
+	name: String,
+	username: {type: String, require:true,maxlength:[50,"maximo 50 caracteres"]},
+	// validacion de numeros
+	age: {type: Number, min:[5,"minimo 5"], max:[100, "maximo 100"]},
+	//validacion requires (true, es que debe estar) o  solo mensje
+	email: {type: String, require:true},
+	date_of_birth: Date,
+	sex: {type: String, enum:{values:posibles_valores,message:"sexo no valido"}}
