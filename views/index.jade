@@ -1,5 +1,8 @@
 //- extens carga la otra vista primero
 extends ./layout.jade
 block contenido
-	h2 bienvenidos
-	a(href="/login") Iniciar sesion
+	//- varias clases en un div
+	div(class="col-md-8 remove-float center-block text-center big-top-center form-group")
+		h2 Bienvenido al Monitor
+		a(href="/login" class="right-space") Iniciar sesion
+		a(href="/" class="right-space") Registrarce

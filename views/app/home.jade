@@ -1,0 +1,11 @@
+extends ../layout.jade
+block contenido
+	form(action="/sessions",method="POST")
+		//- for asigna a objetos con id email un label
+		div
+			label(for="email") Email
+			input(type="text",name="email", placeholder="Email",id="email")
+
+
+		div
+			input(type="submit" value="Iniciar sesion" class="btn btn-info")

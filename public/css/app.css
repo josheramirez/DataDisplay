@@ -1,0 +1,31 @@
+/*pone un espacio al lado derecho del texto(objeto)*/
+.right-space{
+	margin-right:1em;
+}
+/*elimina los float de bootstrap */
+.remove-float{
+	float:none;
+}
+/*margen superior de 100 px */
+.big-top-center{
+	margin-top: 100px;
+}
+.login{
+	width: 314px;
+    margin:auto;
+    /*background: #f7f7f7;*/
+
+}
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+
+	}
+	.inline{
+margin-top: 8px;
+		display: inline;
+	
+		float: right;
+	}
